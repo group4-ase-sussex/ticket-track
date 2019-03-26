@@ -16,7 +16,6 @@ let transporter = nodemailer.createTransport({
 
 //sending emails at periodic intervals
 cron.schedule("* * * * Wednesday", function(){
-	console.log("----------------------");
 	console.log("Running Cron Job");
 	let mailOptions = {
 		from: "senderEmail@gmail.com",
