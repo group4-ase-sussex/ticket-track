@@ -35,15 +35,3 @@ cron.schedule("* * * * Wednesday", function(){
 
 app.listen("2019");
 
-
-transporter.sendMail(mailOptions, function(error, info){
-	if(error){
-		throw error;
-	} else{
-		console.log("...Email delivery failure!...")
-	}
-})
-
-cron.schedule('', function(){
-	const mailOptions = {};
-})
