@@ -99,7 +99,7 @@ let sendFailedMail = async () => {
 }
 
 // Sending emails at periodic intervals - every 1 minute
-schedule("* * * * *", async function() {
+schedule("*/15 * * * *", async function() {
     console.log("Running Cron Job");
     try {
         await fetchData();
